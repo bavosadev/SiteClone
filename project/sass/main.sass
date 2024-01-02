@@ -1,0 +1,193 @@
+@use "../../node_modules/bootstrap/scss/bootstrap"
+@use 'custom'
+@use 'mixins'
+
+
+
+
+    
+html, body
+  font-family: 'Poppins', sans-serif
+  background-color: #1A0924
+  max-width: 100vw
+  box-sizing: border-box
+
+.container-cta
+  border-bottom-right-radius: 8%
+  border-bottom-left-radius: 8%
+  height: 100vh
+
+
+.nav-link:hover
+  color: #7022cf
+  cursor: pointer
+  transition: all 500ms
+
+.btn-nav
+  background-image: linear-gradient(to top right, #E72FB6, rgba(112, 34, 207, 0.822))
+  font-size: 1rem
+  border: none
+ 
+  &:hover
+    color: #F7F7F7
+    background-image: linear-gradient(to top right, #0B1215, #0B1215)
+    animation: pulse 500ms infinite
+
+
+.btn-cta
+  background-image: linear-gradient(to top right, #0B1215, #0B1215)
+  color: #F7F7F7
+  border: none
+  
+  &:hover
+    background-image: custom.$degrade
+    color: #F7F7F7
+    animation: pulse 500ms infinite
+    
+    
+
+.hero-img
+  max-width: 100%
+  width: 450px
+  left: 600px
+  top: 123px
+  object-fit: contain
+
+.icon-item-fire
+  @include mixins.icon-animation
+  width: 10%
+  top: 200px
+  left: 550px
+
+.icon-item-rocket
+  @include mixins.icon-animation
+  left: 500px
+  top: 600px
+
+.icon-item-target
+  @include mixins.icon-animation
+  left: 700px
+  top: 50px
+
+.icon-item-shopping
+  @include mixins.icon-animation
+  left: 950px
+  top: 100px
+
+.trusted
+  margin: 20% auto 5% auto
+  font-size: 3rem
+
+.mockup, .mockup-two
+  margin: 50% auto 5% 
+
+.mockup-two
+  padding-top: 50px
+  left: 25%
+
+.mockup-video
+  top: -40%
+  right: 100%
+
+.mobile-phone
+  max-width: 100%
+  width: 10%
+  margin-left: 3%
+
+.card-cta-end
+  height: 600px
+  margin-top: 30%
+  
+.icon-item
+  &:hover
+    background: #F7F7F7
+    transition: all 1s
+  
+.icon-item-weights
+  @include mixins.icon-animation
+  top: 10%
+  left: 10%
+
+.icon-item-biceps
+  @include mixins.icon-animation
+  left: 15%
+  top: 70%
+
+.icon-item-party
+  @include mixins.icon-animation
+  left: 85%
+  top: 35%
+
+.icon-item-rocket-second
+  @include mixins.icon-animation
+  left: 65%
+  top: 70%
+
+.input-footer
+  height: 100px
+  font-size: 3rem
+
+  &::placeholder
+    font-size: 3rem
+    font-weight: 700
+    color: #b3b3b3
+  &:focus 
+    outline: none
+    box-shadow: none
+
+button[type="submit"]
+  border-radius: 50%
+  color: #F7F7F7
+  &:hover 
+    background-color: #F7F7F7
+    color: #0B1215
+    font-weight: bold
+    transition: all 1s
+
+// // Ipads & Mobile
+// @media screen and (min-width:600px) and (max-width: 1024px)
+
+//   .icon, .hero-img
+//     display: none
+
+// // laptops & Desktop
+// @media screen and (min-width:1025px) and (max-width: 1440px)
+
+// .hero-img
+//   left: 600px
+//   top: 183px
+
+
+// .icon-item-rocket
+//   @include mixins.icon-animation
+//   left: 45%
+//   top: 105%
+
+// .icon-item-target
+//   @include mixins.icon-animation
+//   left: 60%
+//   top: 20%
+
+// .icon-item-shopping
+//   @include mixins.icon-animation
+//   left: 90%
+//   top: 35%
+
+// div.mockup
+//   display: flex
+//   h1.mockup-title, p.text-white
+//     width: 100%
+//     text-align: center
+   
+
+// div.mockup-img
+//   position: static !important
+//   #img-desktops
+//     display: none
+
+// div > h1.mockup-title 
+//   text-align: end
+
+// div > p.text-white
+//   display: none
+// @media screen and (min-width:1441px)
